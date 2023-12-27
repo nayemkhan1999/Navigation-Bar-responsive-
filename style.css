@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #aaa;
+}
+
+.container {
+  background-color: gray;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+.container a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: arial;
+  font-weight: bold;
+  color: white;
+  padding: 10px 20px;
+}
+
+.contact {
+  display: inline;
+  position: relative;
+}
+
+.hover-content {
+  position: absolute;
+  top: 36px;
+  right: 20px;
+  background-color: #aaa;
+  display: none;
+}
+
+.hover-content a {
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  color: black;
+  background-color: gray;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  box-shadow: 0px 0px 5px 0px black;
+}
+
+.hover-content a:hover {
+  background-color: teal;
+  color: black;
+  transition: 0.9s ease;
+  font-weight: bolder;
+  color: white;
+  box-shadow: 5px 5px 16px 0px black;
+}
+
+.contact:focus-within .hover-content {
+  display: block;
+  border: 5px;
+}
+
+/* Responsive Css Maximum Width 550px 
+-------------------------------------*/
+
+@media screen and (max-width: 550px) {
+  .container {
+    background-color: gray;
+    padding: 15px 20px;
+    text-align: center;
+  }
+
+  .container a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: arial;
+    font-weight: bold;
+    color: white;
+    padding: 10px 20px;
+  }
+
+  .contact {
+    display: inline;
+    position: relative;
+  }
+
+  .hover-content {
+    position: absolute;
+    top: 36px;
+    right: 20px;
+    background-color: #aaa;
+    display: none;
+  }
+
+  .hover-content a {
+    display: block;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    color: black;
+    background-color: gray;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0px 0px 5px 0px black;
+  }
+
+  .hover-content a:hover {
+    background-color: teal;
+    color: black;
+    transition: 0.9s ease;
+    font-weight: bolder;
+    color: white;
+    box-shadow: 5px 5px 16px 0px black;
+  }
+
+  .contact:focus-within .hover-content {
+    display: block;
+    border: 5px;
+  }
+}
